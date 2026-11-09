@@ -1,0 +1,105 @@
+
+#root {
+  min-height: 100vh;
+}
+
+.header {
+  height: 90px;
+  padding: 0 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ded7ca;
+}
+
+.logo {
+  font-family: 'Fraunces', serif;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  font-size: 12px;
+  vertical-align: top;
+}
+
+.header nav {
+  display: flex;
+  gap: 32px;
+}
+
+.header nav a {
+  font-size: 13px;
+}
+
+.hero {
+  min-height: 650px;
+  padding: 120px 8%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(25, 18, 13, 0.85),
+    rgba(25, 18, 13, 0.25)
+  );
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 750px;
+}
+
+.subtitle {
+  font-size: 11px;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+}
+
+.hero h1 {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(48px, 7vw, 90px);
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+.description {
+  margin-top: 25px;
+  color: #eee3d6;
+  font-size: 16px;
+}
+
+.hero-button {
+  display: inline-block;
+  margin-top: 35px;
+  padding: 16px 25px;
+  background-color: #f5f1e9;
+  color: #29231e;
+  font-size: 13px;
+  transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #d9c7b2;
+}
