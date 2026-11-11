@@ -34,7 +34,7 @@ function Footer() {
           </a>
 
           <a
-            href="https://wa.me/5581997950037"
+            href="https://wa.me/5581997950037?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Rudimentar%20Coffee."
             target="_blank"
             rel="noopener noreferrer"
           >

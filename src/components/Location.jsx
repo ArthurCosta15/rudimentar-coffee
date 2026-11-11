@@ -3,7 +3,7 @@ import './Location.css'
 
 function Location() {
   return (
-    <section className="location" id="contato">
+    <section className="location" id="localizacao">
       <div className="location-content">
         <p className="location-subtitle">
           VENHA NOS VISITAR
